@@ -1,0 +1,28 @@
+.footer {
+    height: 465px;
+    background-color: var(--dark-grey-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .box{
+
+    padding: 15px 0 25px 0;}
+    
+
+    li {
+        @include Text-footer-mobile;
+        text-transform: uppercase;}
+        .box-section {
+            height: 150px;}
+        .box-rrss {
+            height: 90px;}
+        .we-love {
+            display: inline;
+            }
+
+    &__components {
+        @include Text-footer;}
+        .heart {
+            color: var(--bright-orange);}
+    
+    }

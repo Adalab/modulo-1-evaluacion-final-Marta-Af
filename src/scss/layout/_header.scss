@@ -1,1 +1,49 @@
+.header {
+    height: 100vh;
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    .menu {
+        width: 40px;
+        height: 35px;
+        background-color: var(--cerulean);
+        position: fixed;
+        display: center;
+    }
+    .ico-menu {@include icon;
+        color: var(--white);}
+
+        .box-header {
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            p {color: var(--white);
+                text-align: center;}
+                .text1header {
+                    font-family: 'Roboto Slab', serif;
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                    line-height: 50px;
+                }
+                }
+                .tex2header
+                    {font-family: 'Roboto', sans-serif;
+                    font-size: 1rem;}
+                
+                .botton-header {
+                    margin-top: 20px;
+                    @include circle;
+                    @include center;
+                }
+                }   
+        
+        
+    
+
+            
+                             
+                

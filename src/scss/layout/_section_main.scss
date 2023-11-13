@@ -1,0 +1,41 @@
+.section_main {
+    width: 100%;
+    background-color: var(--ice-blue);
+        nav {
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            .title {
+            @include Text-black-1;}
+    } 
+    .Rectangle {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    .box { 
+        padding: 2rem 4rem 2rem 4rem;
+        overflow: hidden;
+        h3{
+        @include Text-black-2;
+        margin: 0;}
+        p {
+        @include Text-black-3;}}
+    .button_orange {
+        height: 35px;
+        border-radius: 35px;
+        margin: 0 70px 0 70px;
+        background-color: var(--bright-orange);
+        @include center;
+        @include text_white;}
+
+    .container-circle {
+        @include center;
+        .circle {
+        @include circle}
+        position: relative;
+        top: 25px;
+            .icon {@include icon}
+            }
+        }
+    }
+            
