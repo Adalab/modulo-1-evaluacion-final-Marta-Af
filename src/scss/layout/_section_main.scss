@@ -1,41 +1,64 @@
-.section_main {
+.section__main {
     width: 100%;
+    border: 10px;;
     background-color: var(--ice-blue);
-        nav {
+    gap: 50px;
+        &__nav {
             width: 100%;
-            height: 30px;
+            height: 3rem;
+            /*margin: 20px 0 20px 0;*/
             text-align: center;
-            .title {
-            @include Text-black-1;}
-    } 
-    .Rectangle {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-    .box { 
-        padding: 2rem 4rem 2rem 4rem;
+            padding: 1.5rem 0 2rem 0;;
+            &__title {
+            @include Text-black-1;}}
+     
+&__Rectangle {
+    display: grid;
+    grid-template-rows: repeat(3, 20fr);
+    gap: 4rem;
+    align-items: center;
+    /*flex-direction: column;*/
+    justify-items: center;
+    @media (min-width: 768px) and (max-width: 1024px){
+        grid-template-rows:none;
+        grid-template-columns: repeat(3, 20fr);
+        gap: 10fr;}
+
+    &__box { 
+         /*padding: 2rem 4rem 2rem 4rem;*/
         overflow: hidden;
+        /*height: 700px;*/
+        /*width: 210px;*/
         h3{
         @include Text-black-2;
         margin: 0;}
         p {
-        @include Text-black-3;}}
-    .button_orange {
+        @include Text-black-3;}}}
+
+    &__button_orange {
         height: 35px;
         border-radius: 35px;
-        margin: 0 70px 0 70px;
+        margin: 50px 70px 0 70px;
         background-color: var(--bright-orange);
         @include center;
-        @include text_white;}
+        @include text_white;
+        @media (min-width: 768px) {
+            width: 15rem;
+            position: relative;
+            left: 25%;
+            right: 30%;
+            margin-top: 2rem;
+        @media (max-width: 1024px){
+            left: 32%;
+            right: 30%;}}}
 
-    .container-circle {
+    &__container-circle {
         @include center;
-        .circle {
-        @include circle}
-        position: relative;
-        top: 25px;
-            .icon {@include icon}
-            }
-        }
-    }
-            
+        &__circle {
+            @include circle;
+            position: relative;
+            top: 25px;
+        &__icon {@include icon}}
+            }}
+        
+        
