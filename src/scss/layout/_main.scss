@@ -1,7 +1,6 @@
 .main {
-  padding: 2rem 0 2rem 0;
-  height: 70vh;
-  background-color: var(--white);
+  height: 45vh;
+  background-color: $white;
   padding: 0rem 1rem 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -10,7 +9,7 @@
     padding: 0rem 2rem 0rem 2rem;
   }
   @media (min-width: 1024px) {
-    padding: 0rem 8rem 0rem 8rem;
+    padding: 0rem 10rem 0rem 10rem;
   }
   span {
     padding: 0.5rem 0 0.5rem 0;
@@ -38,16 +37,16 @@
   &__button {
     width: 5rem;
     height: 2.1rem;
-    background-color: var(--white);
-    border: solid 2px var(--bright-orange);
+    background-color: $white;
+    border: solid 2px $bright-orange;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     :hover {
       border-radius: 25px;
       border: none;
-      background-color: var(--bright-orange);
-      color: var(--white);
+      background-color: $bright-orange;
+      color: $white;
     }
     p {
       @include center;

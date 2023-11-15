@@ -1,11 +1,8 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'core/mixin-header';
-@import 'core/mixin-main';
-@import 'core/mixin-footer';
-@import 'layout/header';
-@import 'layout/main';
-@import 'layout/section_main';
-@import 'layout/footer';
-@import 'pages/index';
-
+@import "core/variables";
+@import "core/reset";
+@import "core/mixin-main";
+@import "layout/header";
+@import "layout/main";
+@import "layout/section_main";
+@import "layout/footer";
+@import "pages/index";
